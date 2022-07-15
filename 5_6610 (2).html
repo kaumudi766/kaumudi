@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/pricing.css" />
+    
+    <link rel="stylesheet" href="./styles/faq.css" />
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="./styles/styleslandingPage/index.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footter.css" />
+    
+    <title>Pricing</title>
+</head>
+<body>
+    <div class="section">
+        <headers class="header-nav">
+            <nav class="nav">
+                <a href="/">
+                    <img class="logo" src="./assets/attrybNavLog.svg" alt="" />
+                </a>
+                <div class="menu-options">
+                    <div class="menu-option-left">
+                        <div class="Products" onclick="openProductsDD()">
+                            <span>Products</span>
+                            <img class="downarrow" src="./assets/down-arrow.svg" alt="" />
+                        </div>
+                        <a href="/pricing">Pricing</a href="/">
+                        <a href="contact-us">Contact</a href="/">
+                    </div>
+                    <div class="Products__DD dropdown-content" id="prodDD">
+                        <div>
+                            <div>
+                                <img src="./assets/icons/gear.svg" alt="" />
+                            </div>
+                            <a class="Products__DD__text" href="/content-studio">
+                                <div>Content Studio</div>
+                                <small>AI generated copy</small>
+                            </a>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="./assets/icons/group53.svg" alt="" />
+                            </div>
+                            <div class="Products__DD__text">
+                                <div>Web Personalisation</div>
+                                <small>Personalised web assets</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="./assets/icons/group60.svg" alt="" />
+                            </div>
+                            <div class="Products__DD__text">
+                                <div>Targeted Ads</div>
+                                <small>Personalised ads for user</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-option-right">
+                        <a href="/login">Login</a>
+                        <div>
+                            <a href="/login" class="button">GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="login">
+                    
+                </div> -->
+                <div id="mySidenav" class="sidenav">
+                    <div style="position: relative">
+                        <div class="phoneSlider" id="">
+                            <div class="logoLogin">
+                                <img class="companyLog" src="./assets/attryb.png" alt="" />
+                                <div class="loginSignup">
+                                    <a class="loginLink" href="/login">Login /</a>
+                                    <a class="signupBtn" href="/login">SIGN UP</a>
+                                </div>
+                            </div>
+                            <div class="homeIcon">
+                                <a href="#">
+                                    <img src="./assets/icons/homeIcon.svg" alt="mHomeIcon" />
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                            <h2 class="lineOnProduct"><span>Products</span></h2>
+
+                            <div class="sliderContent">
+                                <a class="" href="/content-studio">
+                                    <img src="./assets/icons/gear.svg" alt="" />
+                                    <span>Content Studio</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./assets/icons/group53.svg" alt="" />
+                                    <span> Web Personalisation</span>
+                                </a>
+                                <a href="/#">
+                                    <img src="./assets/icons/group60.svg" alt="" />
+                                    <span>Targeted Ads</span>
+                                </a>
+                            </div>
+                            <div class="closeIcon">
+                                <p></p>
+                                <img src="./assets/mobileAssets/closeicon.svg" alt="" onclick="closeNav()" />
+                            </div>
+                            <div class="sliderContent">
+                                <a class="" href="/content-studio">
+                                    <img class="pricingimg" src="./assets/icons/pricing.svg" alt="" />
+                                    <span>Pricing</span>
+                                </a>
+                            </div>
+                            <p class="divLine"></p>
+                            <div class="contactUs">
+                                <a class="" href="/contact-us">
+                                    <img class="pricingimg" src="./assets/icons/contactUs.svg" alt="" />
+                                    <span>Contact Us</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mobileButtonFree" id="sliderFreeButton">
+                            <button>TRY FOR FREE</button>
+                        </div>
+                    </div>
+                </div>
+                <span class="menuButton" onclick="openNav(event)">
+                    <img src="./assets/mobileButton.svg" />
+                </span>
+            </nav>
+        </headers>
+        <section>
+            <div class="upper">
+            <div class="term">
+                <p>Pricing</p>
+            </div>
+            <div class="paramiddle">
+                <h4>Get unlimited functionality with our premium plan</h4>
+            </div>
+            
+            <div class="para">
+                <h5>Try for free</h5>
+            </div>
+            <p id="classmonth" class="paragraph1">
+                <span>
+                    Pay Monthy 
+
+                </span>
+                <label   class="switch">
+                <input onclick="myFunction()" type="checkbox" >
+                <span class="slider round"></span>
+                </label>
+                <span id="classyear" class="h4boldcenter">&nbspPay Annually</span>
+            </p>
+            
+            <p class="h6bold">Most Popular</p>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <p class="h1bold">Starter</p>
+                    <p class="h4bold">Perfect for Testing</p>
+                   <br>
+                    <p><span id="myDIV" class="h1bold">$49</span ><span class="h5bold">/month/user</span></p>
+                    <p id="billedmonthly" class="h4bold">Billed Monthly</p>
+                    <br>
+                    <div class="cardmargin"><img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                    <p  class="h5bold">1 user</p>
+                    </div>
+                    <div class="cardmargin"><img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p  class="h5bold">10,000 Words</p>
+                        </div>
+                    <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                    <p class="h5bold">
+                        15 projects
+                    </p>
+                    </div>
+                    <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                    <p class="h5bold">
+                        3 long Form Content
+                    </p>
+                    </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">
+                         Intelligence Metrics
+                        </p>
+                        </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">
+                        30+ Templates
+                        </p>
+                        </div><br>
+                    <p class="h4add">Additional User:</p>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p id="adduserprice" class="h5bold">
+                        +$49 per User
+                        </p>
+                                </div>
+                    
+                    <div class="btncenter">
+                    <button class="buttoncard">START 7 DAY FREE TRAIL</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="cardcenter">
+                    <p class="h1bold">Pro</p>
+                    <p class="h4boldcardcenter">Perfect for Single User</p><br>
+                    <p> <span id="middleprice" class="h1bold">$99</span><span class="h5boldcenter">/month/user</span> </p>
+                    <p id="billedmiddle" class="h4boldcardcenter">Billed Monthly</p><br>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">Everything in Starter Plan</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">Unlimited Words</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">Unlimited projects</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">150 long Form Projects</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                        <p class="h5boldcenter">Chat Support</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">Attryb Community</p>
+                </div><br>
+                    <p class="h4boldcardcenter">Additional User:</p>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p id="adduserprice2"class="h5boldcenter">+$89 per User</p>
+                </div>
+                <div class="cardmargin">
+                    <img class="imgstyle" src="./assets/pricing/check.svg" alt="">
+                    <p class="h5boldcenter">+150 Long Form Projects</p>
+                </div>
+                                    
+               <div class="btncenter">
+                    <button type="button"class="buttoncard1">Buy Now</button>
+                </div>
+                </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <p class="h1bold">Enterprise</p>
+                    <p class="h4bold">Perfect for teams(5+ Users)</p><br>
+                    <p><span id="thirdprice" class="h1bold">$79</span><span class="h5bold">/month/user</span></p>
+                    <p id="billedthird"class="h4bold">Billed Monthly</p><br>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">Everything in Pro Plan</p>
+                    </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">5 Users</p>
+                    </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">1000 Long Form Projects</p>
+                    </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">Dedicated Account Manager</p>
+                    </div><br>
+                    <p class="h4add">Additional User:</p>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p id="pricebottom"class="h5bold">+$69 per User</p>
+                    </div>
+                    <div class="cardmargin">
+                        <img class="imgstyle" src="./assets/pricing/circlecheck.svg" alt="">
+                        <p class="h5bold">+200 Long Form Projects</p>
+                    </div>
+                    <div class="btncenter">
+                    <button class="buttoncard">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+           </section>
+           <!-- End of card section-->
+           <!-- start of reviewbycustomer -->
+           <section class="customersRev">
+            <div class="customersRev__wrapper">
+                <h1 class="subHead-primary customersRev__subHeading">Check what our customers are saying!</h1>
+                <div class="customerRev__body">
+                    <div class="customerRev__arrow" onclick="slideReview(-1)">
+                        <img src="./assets/landingPageAssets/arrow-left.svg" alt="" />
+                    </div>
+                    <div class="customerRev__section" id="customerRev__section">
+                        <div class="customerRev__slide showSlide">
+                            <p class="para-primary">
+                                I am an experienced copywriter, and I can vouch for this tool. It saves me a lot of time and
+                                always gives me fresh ideas. Writer’s block is extinct for me with this Content Studio. I was
+                                writing a blog for a week and with Content Studio, it was done in half a day. I was shocked
+                                when I used it for the first time. This surely is the future of content writing.
+                            </p>
+                            <div class="customerRev__image">
+                                <img src="./assets/landingPageAssets/cr-Image1.svg" alt="" class="customerRev__img" />
+                                <div class="customerRev__designation">Justin from <span>Freelance Content Writer</span></div>
+                            </div>
+                        </div>
+                        <div class="customerRev__slide">
+                            <p class="para-primary">
+                                Content studio is my favorite content writing tool! We were struggling to write long form
+                                content which actually ranks on google. This amazing tool gives me information on
+                                high-ranking questions, keywords, competitor intelligence metrics, and much more. I can also
+                                keep my content better organized now!
+                            </p>
+                            <div class="customerRev__image">
+                                <img src="./assets/landingPageAssets/cr-Image-2.svg" alt="" class="customerRev__img" />
+                                <div class="customerRev__designation">Andrea from <span> Shorthills Tech</span></div>
+                            </div>
+                        </div>
+                        <div class="customerRev__slide">
+                            <p class="para-primary">
+                                I just love AI now. I can create the content on the go in no time with Attryb’s Content
+                                Studio. I simply add my product and business details, and I get original, contextual post
+                                suggestions in no time. It so amazing and I am never going back to traditional way of
+                                writing. Thanks, Team Attryb!
+                            </p>
+                            <div class="customerRev__image">
+                                <img src="./assets/landingPageAssets/cr-Image-5.svg" alt="" class="customerRev__img" />
+                                <div class="customerRev__designation">Chris from <span>MyEcomTeams</span></div>
+                            </div>
+                        </div>
+                        <div class="customerRev__slide">
+                            <p class="para-primary">
+                                This is the tool we are using every day in our company for all our campaigns. Whether you
+                                want to write an ad copy, social media post or blog for your website; Content Studio helps us
+                                with everything. I can now generate content for any campaign at any time in 10% of time and
+                                cost.
+                            </p>
+                            <div class="customerRev__image">
+                                <img src="./assets/landingPageAssets/cr-Image-3.svg" alt="" class="customerRev__img" />
+                                <div class="customerRev__designation">Terrel from <span>Golden Steer</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customerRev__arrow" onclick="slideReview(1)">
+                        <img src="./assets/landingPageAssets/arrow-right.svg" alt="" />
+                    </div>
+                </div>
+                <div class="customerRev__indicator" id="slide-indicator">1/4</div>
+            </div>
+        </section>
+
+
+                        <!-- end of reviewbycustomer -->
+                        <!-- start of faq -->
+                        <div class="container">
+                            <div class="inner__cotainer">
+                                <h2 class="center">Frequently Asked Questions</h2>
+                               
+                                <div class="accordion">
+                                  <div class="accordion-item">
+                                      <div class="accordion__content">
+                                          <a>What type of content does Content Studio generate?</a>
+                                            <img src="./assets/pricing/downArrow.svg" alt="">
+                                      </div>
+                                    <div class="content">
+                                      <p> The Content Studio generates content with 30+ templates which is broadly classified in Short Form and Long Form content. Short form content templates cover ad copies for Google, Titles & Meta description for Webpages, and Product Descriptions for Amazon products. Long form content covers 1,000+ words blog posts.	</p>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <div class="accordion__content">
+                                        <a>How does Content Studio generate short form content?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                      <p>Content Studio uses Open AI (GPT-3 based Transformer Language Model) which is trained using internet data to generate any type of text. We have fine-tuned Open AI for each of our templates to give relevant output to the user.</p>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <div class="accordion__content">
+                                        <a> How does Content Studio generate long form content?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+
+                                    </div>
+                                    <div class="content">
+                                      <p>Content Studio has its own industry-specific database with 1B+ questions with relevant search and ranking difficulty metrics. These metrics help user to select the relevant questions to be answered in their blogs. Selecting the questions help user to structure their content through selecting relevant headings, which is also powered by Content Studio’s proprietary database. Once headings, corresponding to the questions, are selected by the user, we use OpenAI to generate answers for the questions. These answers can be edited by the user to create the final blog/article.</p>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <div class="accordion__content">
+                                        <a>Who owns the content generated using Content Studio?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+
+                                    </div>
+                                    <div class="content">
+                                      <p>The Content Studio is just a tool to assist the users to write better content at faster speed. The responsibility and ownership of the published content lies with the user.</p>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <div class="accordion__content">
+                                        <a> Is the generated content original?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+
+                                    </div>
+                                    <div class="content">
+                                      <p> Content Studio creates original content almost every time. Open AI is trained to identify the words and patterns used and doesn’t write that content again. It might be the case that general content is written somewhere and that might be similar to generated content.</p>
+                                    </div>
+                                  </div>
+    
+                                  <div class="accordion-item blogbox" style="display: none;">
+                                    <div class="accordion__content">
+                                        
+                                        <a> When is my account deactivated if I unsubscribe in between billing cycle?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                      <p>  You can subscribe your account at any time. If you have already paid for a billing cycle and deactivated in the middle of the cycle, your account will deactivated at the end of the cycle</p>
+                                    </div>
+                                  </div>
+    
+                                  <div class="accordion-item" style="display: none;">
+                                    <div class="accordion__content">
+                                        <a>Can I collaborate with my team members?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                        
+                                    </div>
+                                    <div class="content">
+                                      <p> Yes, you and your team can share one account and collaborate using our Pro or Enterprise Subscription Plan.</p>
+                                    </div>
+                                  </div>
+    
+                                  
+                                  <div class="accordion-item" style="display: none;">
+                                    <div class="accordion__content">
+                                        
+                                        <a> Can I add more users to my account?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                      <p>Yes, you can invite more users to share your account and they will be charged based on the selected Plan.</p>
+                                    </div>
+                                  </div>
+                                
+                                  <div class="accordion-item" style="display: none;">
+                                    <div class="accordion__content">
+                                        
+                                        <a> What to do if I don’t get relevant content?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                      <p>Content Studio has fine-tuned its models to give you relevant content, however, there may be times when you get repetitive, incomplete, or irrelevant content. Try to modify the input:<br>
+                                        1. Try to amend your existing description to help us generate new content.<br>
+                                        2. Try adding a few more sentences to give better context to Content Studio.<br>
+                                        3. Try to write simple and clear product and business info. Just write the way you would explain to your best friend.<br>
+                                        4. If you have something to share with us, you can give your feedback/suggestions on anil@attryb.com. Our team is working hard to ensure that you get highly-relevant content using our tool. 
+                                      </p>
+                                    </div>
+                                  </div>
+    
+                                  <div class="accordion-item" style="display: none;">
+                                    <div class="accordion__content">
+                                        
+                                        <a> What is your refund policy?</a>
+                                        <img src="./assets/pricing/downArrow.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                      <p>If you downgrade / cancel the subscription within first 7 days, you will get the full refund. No questions asked.</p>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <button id="loadMore" class="buttonfaq">LOAD MORE FAQ</button>
+                                </div>
+
+                            </div>
+                          </div>
+                        
+            <footer>
+                <div class="footer-row">
+                    <div class="footer-flex-list">
+                        <div class="inner-footer-div firstFooterRow">
+                            <p class="footer-list-heading">Company</p>
+                            <ul>
+                                <li><a href="/">About Us</a></li>
+                                <li><a href="/">Privacy Notice</a></li>
+                                <li><a href="/">Terms of Service</a></li>
+                                <img class="squareImage" src="./assets/squareRectangle.svg" alt="" />
+                            </ul>
+                        </div>
+                        <div class="inner-footer-div">
+                            <p class="footer-list-heading">Pricing</p>
+                            <ul>
+                                <li><a href="#">Content Studio Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-footer-div">
+                            <p class="footer-list-heading">Support</p>
+                            <ul>
+                                <li><a href="/">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-footer-div">
+                            <img class="footerLogo" src="./assets/attryb.png" alt="" />
+                            <ul>
+                                <span class="logorights">© 2021 All rights reserved.</span>
+                                <div class="socialIcon">
+                                   <img src="./assets/fb.svg" alt="fb">
+                                   <img class="linkedin" src="./assets/in.svg" alt="">
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+            
+    </div>
+
+                <script src="sliderScripts.js"></script>
+                <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+                <script  src="function.js"></script>
+		        <script src="scriptsLandingPage.js"></script>
+
+</body>
+</html>
