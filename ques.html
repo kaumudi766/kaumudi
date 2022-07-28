@@ -20,13 +20,25 @@
         <input type="radio" name="q3" value="B">Processing<br>
         <input type="radio" name="q3" value="C">Output<br>
         <input type="radio" name="q3" value="D">None of These<br><br>
-        <input type="button" value="Submit" onclick="check()">
+        Q4 __ is the capital of Germany.<br>
+		<input type="radio" name="q4" value="A">Munich<br>
+        <input type="radio" name="q4" value="B">Berlin<br>
+        <input type="radio" name="q4" value="C">Hamburg<br>
+        <input type="radio" name="q4" value="D">None of These<br><br>
+         Q5__ is the color of visible light travels the fastest in crown glass.<br>
+		<input type="radio" name="q5" value="A">Red<br>
+        <input type="radio" name="q5" value="B">White<br>
+        <input type="radio" name="q5" value="C">Blue<br>
+        <input type="radio" name="q5" value="D">None of These<br><br>
+<input type="button" value="Submit" onclick="check()">
 </form>
 <script>
 	function check(){
 		var q1=document.myform.q1.value;
 		var q2=document.myform.q2.value;
 		var q3=document.myform.q3.value;
+		var q4=document.myform.q4.value;
+		var q5=document.myform.q5.value;
 		var count=0;
 		if(q1=="B"){
 			count++;
@@ -35,6 +47,12 @@ if (q2=="A"){
 	count++;
 }
 if(q3=="C"){
+	count++;
+}
+if(q4=="B"){
+	count++;
+}
+if(q5=="A"){
 	count++;
 }
 alert("Your Total Marks is "+count+" ");
